@@ -1,0 +1,53 @@
+.custombutton[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: 50px;
+}
+.custombutton[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.custombutton[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+.col-2 {
+  float: left;
+  width: 10%;
+  margin-top: 6px;
+}
+
+.col-10 {
+  float: left;
+  width: 90%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .col-2, .col-10, .custombutton[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
